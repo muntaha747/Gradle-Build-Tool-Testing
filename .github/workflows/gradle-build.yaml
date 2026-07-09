@@ -34,9 +34,9 @@ jobs:
       - name: Build Project with Gradle
         run: ./gradlew build
 
-      - name: List Generated Files
-        run: ls -lh target
+    #   - name: List Generated Files
+    #     run: ls -lh target
 
       - name: Gradle Run
         run: ./gradlew run
-        
+

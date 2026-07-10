@@ -36,7 +36,7 @@ jobs:
         run: docker build -t gradle-build-test:latest .
 
       #################################################
-      # Push to Docker Hub
+      # Push to Docker Hub with New Token
       #################################################
 
       - name: Login to Docker Hub

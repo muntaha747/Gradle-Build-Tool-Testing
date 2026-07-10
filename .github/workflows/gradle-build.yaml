@@ -72,7 +72,7 @@ jobs:
       - name: Tag Docker Image for ECR
         run: |
           docker tag gradle-build-test:latest \
-          ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/gradle-build-test:version02
+          ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/gradle-hello-app:version02
 
       - name: Push to Amazon ECR.
         run: |

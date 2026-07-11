@@ -82,7 +82,7 @@ jobs:
           docker tag gradle-build-test:latest \
           ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/gradle-hello-app:version02
 
-      - name: Push to Amazon ECR.
+      - name: Push to Amazon ECR (Before Accidentally deleted the ECR Repository)
         run: |
           docker push \
           ${{ secrets.AWS_ACCOUNT_ID }}.dkr.ecr.${{ secrets.AWS_REGION }}.amazonaws.com/gradle-hello-app:version02
